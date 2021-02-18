@@ -1,4 +1,27 @@
 ---
 label: Template 01
 hide_body: true
-fields: []
+fields:
+- name: titulo
+  type: text
+  config:
+    required: false
+  label: Título
+- name: texto
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Texto
+- name: datas
+  type: datetime
+  label: Datas
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
